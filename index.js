@@ -8,11 +8,6 @@ app.get("/",async (req,resp)=>
 const result=await studentmodel.find()
 resp.send(result)
 })
-
-
-
-
-
 app.post("/",async(req,resp)=>{
     const data=await new studentmodel(req.body)
     const result=await data.save()
