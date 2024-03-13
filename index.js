@@ -1,8 +1,10 @@
 const express=require("express")
 const app=express()
+const cors=require("cors")
 require("./mongoosconn01")
 const studentmodel=require("./studentschema02")
 app.use(express.json())
+app.use(cors())
 app.get("/",async (req,resp)=>
 {
 const result=await studentmodel.find()
@@ -15,3 +17,7 @@ app.post("/",async(req,resp)=>{
 }
 )
 app.listen(4000)
+
+
+
+
