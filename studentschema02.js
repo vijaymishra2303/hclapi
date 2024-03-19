@@ -14,4 +14,4 @@ const ImageSchema=mongoose.Schema({
     name:String,
     image:String
 })
-module.exports=mongoose.model("students",ImageSchema)
+module.exports=mongoose.model("img",ImageSchema)
