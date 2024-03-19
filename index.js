@@ -56,7 +56,7 @@ const storage = multer.diskStorage({
         else{
             const newImage=new ImageModel({
                 name:req.body.name,
-                image:"http://localhost:4000"+req.file.filename
+                image:"http://localhost:4000/uploads"+req.file.filename
             })
              newImage.save()
              resp.send("File Uploaded") 
