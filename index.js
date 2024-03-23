@@ -25,7 +25,7 @@ app.delete("/",async (req,resp)=>
 const result=await studentmodel.deleteOne({rollno:req.body.rollno})
 resp.send(result)
 })
-app.listen(4000)
+
 
 
 // file upload
