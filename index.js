@@ -27,7 +27,7 @@ resp.send(result)
 })
 
 app.put("/", async (req, resp) => {
-      const result = await studentmodel.updateOne({ rollno: req.body.rollno }, { /* update object or operators */ });
+      const result = await studentmodel.updateOne({ rollno: req.body.rollno }, { $set:req.body });
       resp.send(result);
   
 });
