@@ -26,11 +26,13 @@ const result=await studentmodel.deleteOne({rollno:req.body.rollno})
 resp.send(result)
 })
 
-app.put("/",async (req,resp)=>
-{
-const result=await studentmodel.updateOne({rollno:req.body.rollno})
-resp.send(result)
-})
+app.put("/", async (req, resp) => {
+      const result = await studentmodel.updateOne({ rollno: req.body.rollno }, { /* update object or operators */ });
+      resp.send(result);
+  
+});
+
+
 app.listen(4000)
 
 
