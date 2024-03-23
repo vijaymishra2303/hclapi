@@ -20,11 +20,11 @@ app.post("/",async(req,resp)=>{
 })
 
 
-// app.delete("/",async (req,resp)=>
-// {
-// const result=await studentmodel.deleteOne({rollno:req.body.rollno})
-// resp.send(result)
-// })
+app.delete("/",async (req,resp)=>
+{
+const result=await studentmodel.deleteOne({rollno:req.body.rollno})
+resp.send(result)
+})
 app.listen(4000)
 
 
