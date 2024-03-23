@@ -38,7 +38,7 @@ require("./mongoosconn01")
 const ImageModel=require("./studentschema02")
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-      cb(null,"public/uploads" );
+      cb(null,"hcl/students" );
     },
     filename: (req, file, cb) => {
       cb(null,file.originalname);
