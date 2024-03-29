@@ -40,6 +40,7 @@ app.listen(4000)
 
 // const express=require("express")
 // const app=express()
+
 // const multer=require("multer")
 // const path=require("path")
 // const fs=require("fs")
@@ -58,7 +59,7 @@ app.listen(4000)
 //  {
 //    // resp.send("upload")
 //     upload(req,resp,(err)=>{
-//         if(err)
+//         if(err)  
 //         {
 //           console.log(err)
 //         }
